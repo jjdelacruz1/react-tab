@@ -51,6 +51,8 @@ class Counter extends React.Component {
       color:color
     })
   }
+
+
   render() {
     console.log(this.state)
     return (<div>
@@ -67,12 +69,25 @@ class Counter extends React.Component {
   }
 }
 
+function AddCounter () {
+  return  <button>Add Counter</button>
+
+}
+
 const App = function() {
-  return (<div>
-    <Counter name="First Counter"/>
-    <Counter name="Second Counter"/>
+
+  let arr = [
+    <Counter name="First Counter"/>,
+    <Counter name="Second Counter"/>,
     <Counter name="Third Counter"/>
-    </div>)
+  ];
+
+  return (
+  <div>
+    <AddCounter></AddCounter>
+    <hr />
+    {arr.map((counter) => counter)}
+  </div>)
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
