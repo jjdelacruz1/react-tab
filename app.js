@@ -1,22 +1,3 @@
-const HelloWorld = function() {
-  return (<h1>Hello World!</h1>)
-}
-
-const List = function(props) {
-  return (<div>
-    <p>This is {props.name}'s list of things to do!</p>
-    <ul>
-      <li></li>
-    </ul>
-  </div>)
-}
-
-const Hello = function(props) {
-  return (<div>
-    <h1>Hello {props.name}</h1>
-    <List name={props.name} />
-    </div>)
-}
 
 class Counter extends React.Component {
   state = {
@@ -99,3 +80,22 @@ ReactDOM.render(<App />, document.getElementById('root'))
 <h1>Class Example</h1>
 <HelloClass name="class-based component 1" />
 {new HelloClass({name: "Class-based component 2"}).render()} */}
+// const HelloWorld = function() {
+//   return (<h1>Hello World!</h1>)
+// }
+
+// const List = function(props) {
+//   return (<div>
+//     <p>This is {props.name}'s list of things to do!</p>
+//     <ul>
+//       <li></li>
+//     </ul>
+//   </div>)
+// }
+
+// const Hello = function(props) {
+//   return (<div>
+//     <h1>Hello {props.name}</h1>
+//     <List name={props.name} />
+//     </div>)
+// }
